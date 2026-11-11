@@ -1,6 +1,15 @@
 # Changelog
 
 
+## v7.5.5.post1 (2026-11-11)
+
+Temporary internal build for Python 3.14/3.15, until upstream pysaml2 ships support.
+
+- Support Python 3.15 and xmlschema 4; replace pyOpenSSL with cryptography
+  (from amanjain/pysaml2@bb1df7c)
+- Lock xmlschema 4.2.0 / elementpath 5.0.4 so `poetry install` works on Python 3.15
+
+
 ## v7.5.5 (2026-09-17)
 
 - Resolve CVE-2026-26007 by migrating to the from pyOpenSSL to the cryptography APIs
